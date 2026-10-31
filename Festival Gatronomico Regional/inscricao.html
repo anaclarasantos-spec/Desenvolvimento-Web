@@ -1,0 +1,73 @@
+<html lang="pt-BR">
+<html>
+<link rel="stylesheet" href="style ins.css">
+<nav>
+</nav>
+<main>
+    <h2>Incrição</h2>
+    <p>
+        Preencha os dados abaixo para participar do evento
+    </p>
+    <form>
+        <!--Campo nome-->
+        <label for="nome"> Nome:</label>
+        <input
+        type="text"
+        id="nome"
+        name="nome"
+        required>
+        <!--campo email-->
+        <label for="email">E-mail:</label>
+        <input
+        type="email"
+        id="email"
+        name="email"
+        required>
+        <!--campo idade-->
+        <label for="idade">Idade:</label>
+        <input
+        type="number"
+        id="idade"
+        name="idade"
+        required>
+        <label for="experiencia">
+            Nível Na Cozinha
+        </label>
+        <select id="experiencia" name="experiencia">
+            <option value="iniciante">Iniciante</option>
+            <option value="Amador">Amador</option>
+            <option value="Profissional">Profissional</option>
+        </select>
+    </form>
+    <p>Qual aréa mais lhe interessa?</p>
+    <input type="radio" id="Doces" name="area" value="Doces">
+    <label for="Doces">Confeitaria</label>
+
+    <input type="radio" id="Salgados" name="area" value="Salgados">
+    <label for="Salgados">Culinaria Regional</label>
+
+    <input type="radio" id="Bebidas" name="area" value="Bebidas">
+    <label for="Bebidas">Bebidas tipicas</label>
+    <input
+    type="checkbox"
+    id="novidades"
+    name="novidades">
+    <label for="novidades">
+        quero receber informações sobre próximos eventos
+    </label>
+    <label for="observacoes">Observações:</label>
+    <textarea
+    id="observacoes"
+    name="observacoes"
+    rows="5"
+    cols="40"></textarea>
+    <button type="submit">
+         realizar inscrição
+    </button>
+</main>
+<footer>
+    <hr>
+    <p>Festival de Gastronomia do Nordeste</p>
+    <p>Projeto desenvolvido durante as aulas de Desenvolvimento Web.</p>
+</footer>
+</html>

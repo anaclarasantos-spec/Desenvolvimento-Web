@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+  --cor-fundo: #FDFCFA;         
+  --cor-fundo-card: #F7F4EE;    
+  --cor-principal: #1D2A3A;     
+  --cor-destaque: #2D3E53;      
+  --cor-borda: #E3DCD1;
+  --cor-texto: #50321F;
+}    
+
+body{
+    font-family: "Raleway", sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 1.5rem;
+}
+header{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    background-color: var(--cor-borda);
+    text-align: center;
+    color: var(--cor-destaque);
+    padding: 2rem;
+    display: flex;
+   
+    nav{
+        text-decoration: none;
+        text-align: center;
+    }
+}
+    

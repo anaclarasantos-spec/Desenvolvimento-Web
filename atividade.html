@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="stylee.css">
+    <!-- O seu script será carregado aqui -->
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Minhas Tarefas</h1>
+            <p>Organize seu dia com facilidade</p>
+        </header>
+
+        <section class="painel-adicionar">
+            <form id="form_tarefa">
+                <label for="nova_tarefa" class="sr-only">Nova Tarefa</label>
+                <input type="text" id="nova_tarefa" placeholder="Ex: Estudar JavaScript DOM">
+                <button type="submit" id="btn-adicionar">Adicionar</button>
+            </form>
+            <p id="mensagem-erro" aria-live="polite"></p>
+        </section>
+
+        <section class="painel-lista">
+            <ul id="lista_tarefas">
+                <!-- As tarefas criadas pelo JS devem aparecer aqui dentro -->
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

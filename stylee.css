@@ -1,0 +1,134 @@
+    :root {
+            --cor-fundo: #f0f4f8;
+            --cor-primaria: #2b6cb0;
+            --cor-primaria-hover: #2c5282;
+            --cor-texto: #2d3748;
+            --cor-borda: #e2e8f0;
+            --cor-sucesso: #48bb78;
+            --cor-erro: #e53e3e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            display: flex;
+            justify-content: center;
+            padding-top: 3rem;
+        }
+
+        .container {
+            background-color: white;
+            width: min(90%, 500px);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            color: var(--cor-primaria);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Formulário */
+        #form-tarefa {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #nova-tarefa {
+            flex-grow: 1;
+            padding: 0.8rem;
+            border: 1px solid var(--cor-borda);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        #btn-adicionar {
+            padding: 0.8rem 1.2rem;
+            background-color: var(--cor-primaria);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #btn-adicionar:hover {
+            background-color: var(--cor-primaria-hover);
+        }
+
+        #mensagem-erro {
+            color: var(--cor-erro);
+            font-size: 0.9rem;
+            min-height: 1.5rem;
+        }
+
+        /* Lista de Tarefas */
+        #lista-tarefas {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        #lista-tarefas li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #f7fafc;
+            border: 1px solid var(--cor-borda);
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        #lista-tarefas li button {
+            background-color: white;
+            border: 1px solid var(--cor-sucesso);
+            color: var(--cor-sucesso);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        #lista-tarefas li button:hover {
+            background-color: var(--cor-sucesso);
+            color: white;
+        }
+
+        /* Classe dinâmica que será adicionada pelo JavaScript */
+        .tarefa-concluida {
+            text-decoration: line-through;
+            color: #a0aec0;
+            opacity: 0.7;
+        }
+
+        .tarefa-concluida button {
+            background-color: var(--cor-sucesso) !important;
+            color: white !important;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
