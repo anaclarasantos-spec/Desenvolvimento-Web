@@ -19,7 +19,7 @@ Tarefa.addEventListener('submit', function(evento){//add um avento para chamar t
     const lista = document.createElement('li')//cria um novo elemento HTML na memoria do JS
     lista.textContent = tarefa//insere o texto digitado pelo usuario no li
 
-    const Concluir = document.createElement("button")//cria um novo elemento de botão na memoria
+    const Concluir = document.createElement("button")//cria um novo element o de botão na memoria
     Concluir.textContent = "Concluir"
     Concluir.addEventListener("click", function() {//add um evento de clique exclusivo para esse botão
     lista.classList.toggle("tarefa-concluida");});
